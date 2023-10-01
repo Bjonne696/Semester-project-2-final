@@ -1,0 +1,241 @@
+
+$primary-gray: #5D5D5D;
+$secondary-blue: #7FBDC7;
+$background-light: #F8F4D7;
+$success-green: #B2F37A;
+$danger-red: #C55038;
+$warning-yellow: #F9F46A;
+
+body {
+    background-color: $background-light;
+    font-family: Arial, sans-serif;
+}
+
+h1  {
+    font-family: industry-inc-inline, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: fino-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: condor, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.navbar-primary-gray {
+    background-color: $primary-gray;
+    padding: 10px 20px;
+
+    .navbar-brand {
+        color: $background-light;
+        margin-right: 20px;
+    }
+
+    .btn-custom {
+        background-color: $primary-gray;
+        color: $background-light;
+        border: 1px solid $secondary-blue;
+        border-radius: 25px; // Round corners
+        transition: all 0.3s;
+    
+        &:hover, 
+        &:focus {
+            background-color: darken($primary-gray, 10%);
+            border-color: darken($secondary-blue, 10%);
+            color: darken($background-light, 10%);
+        }
+    }
+}
+
+.user-banner {
+    background-color: $danger-red;
+    display: flex;
+    align-items: center;
+
+    img {
+        border: 2px solid $secondary-blue;
+        border-radius: 50%;
+    }
+
+    .credit-balance {
+        font-weight: bold;
+        color: $warning-yellow;
+    }
+
+    .credits-text {
+        color: $warning-yellow;
+    }
+}
+
+.yellow-text {
+    color: $warning-yellow;
+    
+    &:hover, &:focus {
+        color: darken($warning-yellow, 10%);
+    }
+}
+
+.hero-banner {
+    background-color: $secondary-blue;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    .hero-logo {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100px;
+        height: auto;
+    }
+
+    .hero-text {
+        color: $danger-red;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+}
+
+input[type="text"], input[type="password"], input[type="search"] {
+    background-color: $primary-gray;
+    color: $background-light;
+    border: 1px solid $secondary-blue;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    &:focus {
+        outline: none;
+        border-color: $secondary-blue;
+        box-shadow: 0 0 10px rgba($secondary-blue, 0.5);
+    }
+}
+
+button {
+    background-color: $success-green;
+    color: $background-light;
+    border: none;
+    border-radius: 15px;
+    &:hover {
+        background-color: darken($success-green, 10%);
+    }
+}
+
+.profile-header {
+    color: $danger-red;
+    margin-bottom: 20px;
+}
+
+.custom-card {
+    border-radius: 10px;
+    .card-body {
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.secondary-blue-bg {
+    background-color: $secondary-blue;
+}
+
+.success-green-bg {
+    background-color: $success-green;
+}
+
+.btn-success-green {
+    background-color: $success-green;
+    &:hover {
+        background-color: darken($success-green, 10%);
+    }
+}
+
+.btn-secondary-blue {
+    background-color: $secondary-blue;
+    &:hover {
+        background-color: darken($secondary-blue, 10%);
+    }
+}
+
+.rounded-btn {
+    border-radius: 10px;
+}
+
+.drag-drop-avatar {
+    height: 100px;
+    border: 2px dashed $primary-gray;
+    position: relative;
+    margin-bottom: 15px;
+
+    .avatar-placeholder {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+.dashboard-cards-container {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+        flex: 1;
+        margin: 0 10px; 
+        &.border {
+            border: 1px solid $primary-gray; 
+        }
+        
+        .card-header {
+            background-color: $primary-gray; 
+            color: $background-light; 
+    }
+}
+.section-header {
+    background-color: $primary-gray; 
+    padding: 10px 0;
+    .section-title {
+        color: $background-light;
+        font-weight: bold;
+    }
+}
+
+.listing-card-section,
+.bids-card-section {
+    border: 1px solid $primary-gray;
+    height: 200px; 
+
+    
+    .listing-card-placeholder,
+    .bids-card-placeholder {
+        background-color: black;
+        width: 25%; 
+        height: 100%;
+        float: left;
+        margin: 0 1%; 
+    }
+}
+
+.card-body2, .row2 {
+    background-color: $background-light;
+    color: $primary-gray;
+}
+
+.card-header2 {
+    background-color: $primary-gray;
+    color: $background-light;
+}
+}
+
